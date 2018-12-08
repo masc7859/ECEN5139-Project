@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<launch>
+  <arg name="ltl" default="" />
+	<node pkg="verif_project" type="ltl_translation.py" name="ltl_translation">
+    <param name="ltl_input" value="$(arg ltl)" />
+  </node>
+</launch>
